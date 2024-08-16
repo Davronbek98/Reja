@@ -492,6 +492,11 @@
   cursor: pointer;
   visibility: visible;
 }
+
+.circle:hover {
+  cursor: pointer;
+  background-color: rgb(255, 180, 0);
+}
 .circle .icon-name {
   visibility: hidden;
   background-color: black;
