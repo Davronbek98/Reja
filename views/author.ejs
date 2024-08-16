@@ -15,6 +15,7 @@
   <body>
     <div class="frame">
       <div class="main_frame">
+        <!--Left_frame-->
         <div class="left_frame">
           <div class="left_1">
             <div class="left_1-1">
@@ -61,17 +62,219 @@
             </div>
           </div>
           <div class="marginer"></div>
-          <div class="left_2"></div>
+          <div class="left_2">
+            <div class="info">
+              <div class="title">Age:</div>
+              <div class="age"><%=user.age%></div>
+            </div>
+            <div class="info">
+              <div class="title">Residence:</div>
+              <div class="age">BD</div>
+            </div>
+            <div class="info">
+              <div class="title">Freelance:</div>
+              <div class="age" style="color: green">Available</div>
+            </div>
+            <div class="info">
+              <div class="title">Address:</div>
+              <div class="age"><%=user.address%></div>
+            </div>
+          </div>
           <div class="marginer"></div>
-          <div class="left_3"></div>
+          <div class="left_3">
+            <div class="title2">Languages</div>
+            <div class="type">
+              <div class="lang"><%=user.languages[0]%></div>
+              <div class="foiz">100%</div>
+            </div>
+            <div class="line">
+              <div class="color"></div>
+            </div>
+
+            <div class="type">
+              <div class="lang"><%=user.languages[1]%></div>
+              <div class="foiz">80%</div>
+            </div>
+            <div class="line">
+              <div class="color" style="width: 205px"></div>
+            </div>
+
+            <div class="type">
+              <div class="lang"><%=user.languages[2]%></div>
+              <div class="foiz">60%</div>
+            </div>
+            <div class="line">
+              <div class="color" style="width: 195px"></div>
+            </div>
+          </div>
           <div class="marginer"></div>
-          <div class="left_4"></div>
-          <div class="marginer"></div>
-          <div class="left_5"></div>
+          <div class="left_4">
+            <div class="title2">Skills</div>
+
+            <div class="type">
+              <div class="lang"><%=user.skills[0]%></div>
+              <div class="foiz">90%</div>
+            </div>
+            <div class="line">
+              <div class="color" style="width: 209px"></div>
+            </div>
+            <div class="type">
+              <div class="lang"><%=user.skills[1]%></div>
+              <div class="foiz">85%</div>
+            </div>
+            <div class="line">
+              <div class="color" style="width: 207px"></div>
+            </div>
+            <div class="type">
+              <div class="lang"><%=user.skills[2]%></div>
+              <div class="foiz">80%</div>
+            </div>
+            <div class="line">
+              <div class="color" style="width: 203px"></div>
+            </div>
+            <div class="type">
+              <div class="lang"><%=user.skills[3]%></div>
+              <div class="foiz">75%</div>
+            </div>
+            <div class="line">
+              <div class="color" style="width: 180px"></div>
+            </div>
+            <div class="type">
+              <div class="lang"><%=user.skills[4]%></div>
+              <div class="foiz">85%</div>
+            </div>
+            <div class="line">
+              <div class="color" style="width: 207px"></div>
+            </div>
+          </div>
+          <div class="marginer" style="margin-top: 85px"></div>
+          <div class="left_5">
+            <div class="title2">Extra Skills</div>
+            <div class="skills">
+              <img src="/author/icon/Icons.svg" alt="" />
+              <span>Bootstrap, Materalize</span>
+            </div>
+            <div class="skills">
+              <img src="/author/icon/Icons.svg" alt="" />
+              <span>Stylus, Sass, Less</span>
+            </div>
+            <div class="skills">
+              <img src="/author/icon/Icons.svg" alt="" />
+              <span>Gulp, Webpack, Grunt</span>
+            </div>
+            <div class="skills">
+              <img src="/author/icon/Icons.svg" alt="" />
+              <span>GIT Knowledge</span>
+            </div>
+          </div>
           <div class="marginer"></div>
         </div>
-        <div class="midd_frame"></div>
-        <div class="rigth_frame"></div>
+        <!--Midd_frame-->
+        <div class="midd_frame">
+          <div class="midd_up">
+            <div class="midd_left">
+              <div class="about">
+                <span>Doctor neurologists in OHSU Hospital </span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
+                  volutpat feugiat placerat lobortis. Natoque rutrum semper sed
+                  suspendisse nunc lectus.
+                </p>
+                <div class="butt">HIRE ME -></div>
+              </div>
+            </div>
+            <div class="midd_right">
+              <img src="/author/images/Your Image 1.svg" alt="" />
+            </div>
+          </div>
+          <div class="midd_bott">
+            <div class="tittle3">
+              <span>MY Services</span>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit. lorem
+                ipsum
+              </p>
+            </div>
+            <div class="wrap">
+              <div class="box">
+                <div class="icon2">
+                  <img src="/author/icon/Icons_coding.svg" alt="" />
+                </div>
+                <span>Web Development</span>
+                <p>Blog, E-commerce</p>
+              </div>
+              <div class="box">
+                <div class="icon2">
+                  <img src="/author/icon/Icons_illustration.svg" alt="" />
+                </div>
+                <span>UI/UX Design</span>
+                <p>Mobile App, Website Design</p>
+              </div>
+              <div class="box">
+                <div class="icon2">
+                  <img src="/author/icon/Icons_Microphone.svg" alt="" />
+                </div>
+                <span>Sound Design</span>
+                <p>Voice Over, Beat Making</p>
+              </div>
+              <div class="box">
+                <div class="icon2">
+                  <img src="/author/icon/Icons_game-development.svg" alt="" />
+                </div>
+                <span>Game Design</span>
+                <p>Character Design, Props & Objects</p>
+              </div>
+              <div class="box">
+                <div class="icon2">
+                  <img src="/author/icon/Icons_Photographer.svg" alt="" />
+                </div>
+                <span>Photography</span>
+                <p>Portrait, Product Potography</p>
+              </div>
+              <div class="box">
+                <span>Advertising</span>
+                <p style="margin: 25px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
+                  nulla diam in ac dictum a urna viverra morbi.
+                </p>
+                <a href="">ORDER NOW ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Right_frame-->
+        <div class="right_frame">
+          <div class="contrast">
+            <img src="/author/menu_icon/Contrast.svg" alt="" />
+          </div>
+          <div class="icon_menu">
+            <div class="circle">
+              <img src="/author/menu_icon/Icons_Home.svg" alt="" />
+              <span class="icon-name">Home</span>
+            </div>
+            <div class="circle">
+              <img src="/author/menu_icon/Icons_Services.svg" alt="" />
+              <span class="icon-name">Services</span>
+            </div>
+            <div class="circle">
+              <img src="/author/menu_icon/Icons_cv.svg" alt="" />
+              <span class="icon-name">Portfolio</span>
+            </div>
+            <div class="circle">
+              <img src="/author/menu_icon/Icons_Portfolio.svg" alt="" />
+              <span class="icon-name">bag</span>
+            </div>
+            <div class="circle">
+              <img src="/author/menu_icon/Icons_Blog.svg" alt="" />
+              <span class="icon-name">cv</span>
+            </div>
+            <div class="circle">
+              <img src="/author/menu_icon/Icons_Contact.svg" alt="" />
+              <span class="icon-name">Contact</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
