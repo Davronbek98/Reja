@@ -9,7 +9,7 @@ mongodb.connect(
   connectionString,
   {
     useNewUrlParser: true,
-    useUnifeildTopology: true,
+    useUnifeidTopology: true,
   },
   (err, data) => {
     if (err) console.log("ERROR on connection MongoDB");
