@@ -15,6 +15,7 @@ mongodb.connect(
     if (err) console.log("ERROR on connection MongoDB");
     else {
       console.log("MongoDB connection succed");
+
       module.exports = data;
 
       const app = require("./app");
