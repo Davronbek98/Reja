@@ -114,17 +114,32 @@ console.log("passed here 1"); */
 
 // TASK -A
 
-function countLetter(e, developer) {
-  let count = 0;
+// function countLetter(e, developer) {
+//   let count = 0;
 
-  for (let i = 0; i < developer.length; i++) {
-    if (developer[i] === e) {
+//   for (let i = 0; i < developer.length; i++) {
+//     if (developer[i] === e) {
+//       count++;
+//     }
+//   }
+
+//   return count;
+// }
+
+// const result = countLetter("e", "developer");
+// console.log(result);
+
+// TASK - B;
+
+function countDigits(string) {
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] >= "0" && string[i] <= "9") {
       count++;
     }
   }
-
   return count;
 }
 
-const result = countLetter("e", "developer");
+const result = countDigits("asd7bhsd3c3dff8hf2jfj9");
 console.log(result);
