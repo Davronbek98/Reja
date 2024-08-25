@@ -131,15 +131,23 @@ console.log("passed here 1"); */
 
 // TASK - B;
 
-function countDigits(string) {
-  let count = 0;
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] >= "0" && string[i] <= "9") {
-      count++;
-    }
-  }
-  return count;
-}
+// function countDigits(string) {
+//   let count = 0;
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] >= "0" && string[i] <= "9") {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
 
-const result = countDigits("asd7bhsd3c3dff8hf2jfj9");
+// const result = countDigits("asd7bhsd3c3dff8hf2jfj9");
+// console.log(result);
+
+// Task -C;
+
+function checkContent(word1, word2) {
+  return word1.split("").sort().join("") === word2.split("").sort().join("");
+}
+const result = checkContent("mitgroup", "gmtiprou");
 console.log(result);
