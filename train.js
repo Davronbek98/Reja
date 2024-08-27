@@ -146,8 +146,77 @@ console.log("passed here 1"); */
 
 // Task -C;
 
-function checkContent(word1, word2) {
-  return word1.split("").sort().join("") === word2.split("").sort().join("");
+// function checkContent(word1, word2) {
+//   return word1.split("").sort().join("") === word2.split("").sort().join("");
+// }
+// const result = checkContent("mitgroup", "gmtiprou");
+// console.log(result);
+
+// Task -D
+class Shop {
+  constructor(non, lagmons, cola) {
+    this.products = {
+      non: non,
+      lagmon: lagmons,
+      cola: cola,
+    };
+  }
+
+  _getCurrentTime() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, "0");
+    const minutes = now.getMinutes().toString().padStart(2, "0");
+    return `${hours}:${minutes}`;
+  }
+
+  qoldiq() {
+    const time = this._getCurrentTime();
+    console.log(
+      `Hozirda ${time} bor ${this.products.non} non${
+        this.products.non !== 1 ? "s" : ""
+      }, ${this.products.lagmon} lagmon${
+        this.products.lagmon !== 1 ? "s" : ""
+      }, va ${this.products.cola} cola${this.products.cola !== 1 ? "s" : ""}!`
+    );
+  }
+
+  sotuv(product, quantity) {
+    if (this.products[product] !== undefined) {
+      if (this.products[product] >= quantity) {
+        this.products[product] -= quantity;
+        const time = this._getCurrentTime();
+        console.log(
+          `Hozirda ${time}, sotildi ${quantity} ${product}${
+            quantity > 1 ? "s" : ""
+          }.`
+        );
+      } else {
+        console.log(
+          ` ${product} mahsuloti sotuvga yetarlimas.Mavjud: ${this.products[product]}`
+        );
+      }
+    } else {
+      console.log(`Mahsulot ${product} sotuvda mavjud emas`);
+    }
+  }
+
+  qabul(product, quantity) {
+    if (this.products[product] !== undefined) {
+      this.products[product] += quantity;
+      const time = this._getCurrentTime();
+      console.log(
+        `Hozirda ${time}, qabul qilingan ${quantity} ${product}${
+          quantity > 1 ? "s" : ""
+        }.`
+      );
+    } else {
+      console.log(`Mahsulot ${product} sotuvda mavjud`);
+    }
+  }
 }
-const result = checkContent("mitgroup", "gmtiprou");
-console.log(result);
+
+const shop = new Shop(4, 5, 2);
+shop.qoldiq();
+shop.sotuv("non", 3);
+shop.qabul("cola", 4);
+shop.qoldiq();
