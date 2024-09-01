@@ -223,9 +223,27 @@ console.log("passed here 1"); */
 
 // Task -E
 
-function getReverse(word) {
-  return word.split("").reverse().join("");
+// function getReverse(word) {
+//   return word.split("").reverse().join("");
+// }
+
+// const result = getReverse("hello");
+// console.log(result);
+
+// Task - F
+
+function findDoublers(word) {
+  const seen = new Set();
+
+  for (let char of word) {
+    if (seen.has(char)) {
+      return true;
+    }
+    seen.add(char);
+  }
+
+  return false;
 }
 
-const result = getReverse("hello");
+const result = findDoublers("hello");
 console.log(result);
