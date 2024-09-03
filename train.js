@@ -232,18 +232,39 @@ console.log("passed here 1"); */
 
 // Task - F
 
-function findDoublers(word) {
-  const seen = new Set();
+// function findDoublers(word) {
+//   const seen = new Set();
 
-  for (let char of word) {
-    if (seen.has(char)) {
-      return true;
+//   for (let char of word) {
+//     if (seen.has(char)) {
+//       return true;
+//     }
+//     seen.add(char);
+//   }
+
+//   return false;
+// }
+
+// const result = findDoublers("hello");
+// console.log(result);
+
+// Task -G
+
+function getHighestIndex(arr) {
+  if (arr.length === 0);
+
+  let maxIndex = 0;
+  let maxValue = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > maxValue) {
+      maxValue = arr[i];
+      maxIndex = i;
     }
-    seen.add(char);
   }
 
-  return false;
+  return maxIndex;
 }
 
-const result = findDoublers("hello");
+const result = getHighestIndex([5, 21, 12, 21, 8]);
 console.log(result);
